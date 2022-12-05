@@ -22,16 +22,15 @@ setInterval(() => {
 // Call loadBooks function when DOM loads
 document.querySelector('DOMContentLoaded', loadBooks(library, bookCollection));
 
-
 // Add button event listener
 addBook.addEventListener('click', (event) => {
   event.preventDefault();
   const titleElement = event.target.parentElement.querySelector('#title');
   const authorElement = event.target.parentElement.querySelector('#author');
   if (event.target.id === 'add' && validation(titleElement, authorElement)) {
-      storeEntryData(library, titleElement, authorElement);
-      updateNewBook(library, bookCollection);
-      clear(titleElement, authorElement);
+    storeEntryData(library, titleElement, authorElement);
+    updateNewBook(library, bookCollection);
+    clear(titleElement, authorElement);
   }
 });
 
@@ -42,10 +41,9 @@ bookCollection.addEventListener('click', (event) => {
   }
 });
 
-
 // Navigation buttons event listener
 document.querySelector('nav').addEventListener('click', (event) => {
-  if(event.target.id === 'add'){ display.addSection(); }
-  if(event.target.id === 'list'){ display.listSection(); }
-  if(event.target.id === 'contact-btn'){ display.contactSection(); }
+  if (event.target.id === 'add') { display.addSection(); }
+  if (event.target.id === 'list') { display.listSection(); }
+  if (event.target.id === 'contact-btn') { display.contactSection(); }
 });
