@@ -15,9 +15,10 @@ const dateTime = document.getElementById('date-time');
 const library = [];
 
 // Call setDateTime function every second
-setInterval(() => {
-  setDateTime(dateTime);
-}, 1000);
+setDateTime(dateTime);
+// setInterval(() => {
+//   setDateTime(dateTime);
+// }, 1000);
 
 // Call loadBooks function when DOM loads
 document.querySelector('DOMContentLoaded', loadBooks(library, bookCollection));
