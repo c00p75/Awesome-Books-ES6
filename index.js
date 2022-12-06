@@ -22,7 +22,7 @@ setInterval(() => {
 // Call loadBooks function when DOM loads
 document.querySelector('DOMContentLoaded', loadBooks(library, bookCollection));
 
-// Add button event listener
+// Add button event listener 
 addBook.addEventListener('click', (event) => {
   event.preventDefault();
   const titleElement = event.target.parentElement.querySelector('#title');
