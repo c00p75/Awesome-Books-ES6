@@ -1,4 +1,4 @@
-export default function validation(titleElement, authorElement) {
-  if (titleElement === '' || authorElement === '') { return false; }
+export default function validation(titleField, authorField) {
+  if (titleField.value === '' || authorField.value === '') { return false; }
   return true;
 }
