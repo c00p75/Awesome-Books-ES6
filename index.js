@@ -16,9 +16,9 @@ const library = [];
 
 // Call setDateTime function every second
 setDateTime(dateTime);
-// setInterval(() => {
-//   setDateTime(dateTime);
-// }, 1000);
+setInterval(() => {
+  setDateTime(dateTime);
+}, 1000);
 
 // Call loadBooks function when DOM loads
 document.querySelector('DOMContentLoaded', loadBooks(library, bookCollection));
